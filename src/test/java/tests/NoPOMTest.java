@@ -14,7 +14,6 @@ public class NoPOMTest {
 	public void test_HomePage_Appear_Correct() {
 		System.setProperty("webdriver.chrome.driver","C:/Software/drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		System.out.println("browser");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://petstore.octoperf.com/actions/Account.action");
 		driver.findElement(By.name("username")).sendKeys("j2ee");
